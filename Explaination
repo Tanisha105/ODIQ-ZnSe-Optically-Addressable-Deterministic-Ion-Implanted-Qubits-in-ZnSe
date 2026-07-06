@@ -1,0 +1,10 @@
+Explaination
+Imports -> 
+import argparse -> Standard library module for building command-line interfaces (--species, --doses, etc.).
+import csv      -> Standard library module for reading/writing CSV files — used in save_csv().
+import math     -> Used once, for math.log10() in the dose-scaling calculation.
+from dataclasses import dataclass, field -> dataclass is a decorator that auto-generates __init__, __repr__, 
+                etc. for a class that's just holding data. field is imported but actually unused in this 
+                version — a leftover I should clean up (harmless, just dead import).
+import numpy as np
+import matplotlib.pyplot as plt ->  
