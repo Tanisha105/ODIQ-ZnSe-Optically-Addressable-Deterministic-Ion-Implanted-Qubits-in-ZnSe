@@ -7,4 +7,9 @@ from dataclasses import dataclass, field -> dataclass is a decorator that auto-g
                 etc. for a class that's just holding data. field is imported but actually unused in this 
                 version — a leftover I should clean up (harmless, just dead import).
 import numpy as np
-import matplotlib.pyplot as plt ->  
+import matplotlib.pyplot as plt ->  NumPy for array math (the stages = np.arange(...) vectorized computations), 
+                    Matplotlib for plotting.
+Q_ELEMENTARY = 1.602176634e-19  # Coulombs  A module-level constant: the elementary charge, used in the 
+                                mobility formula. Naming it in ALL_CAPS is the Python convention for "this is a constant, 
+                                don't reassign it.
+ 
